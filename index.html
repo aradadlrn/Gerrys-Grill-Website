@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Brief description">
+        <title>Gerry's Grill</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/solid.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/thinline.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- HEADER -->
+         <nav class="navbar">
+            <div class="nav-container">
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <div class="nav-logo">
+                    <img src="/assets/gerry-logo.png">
+                </div>
+                <a href="#menu">MENU</a>
+                <a href="#reserve">RESERVE</a>
+            </div>
+         </nav>
+
+         <!-- SLIDESHOW SECTION -->
+         <section class="slideshow-container" id="home" onclick="handleClick(event)">
+            <div class="slide fade">
+                <img src="/assets/1.png" alt="image 1" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="/assets/2.png" alt="image 2" style="width:100%">
+            </div>
+         </section>
+
+         <!-- OUR STORY SECTION -->
+         <section class="story-section" id="about">
+            <!-- LEFT CONTAINER -->
+            <div class="left-container">
+                <h1>OUR STORY</h1>
+                <p>Here at Gerry's, we aim to give everyone a pleasurable dining experience, serving only the freshest food ranging from Filipino favorites – Sisig, Inihaw na Pusit, Crispy Pata, Beef Kare-kare to flavorful desserts.</p>
+                <br>
+                <p>I have always dreamt of putting up a place where everyone could hang out and enjoy good food. With my passion for cooking and love for grilled dishes came Gerry's.</p>
+                <br>
+                <p>Although the original concept of my business was one where people could unwind with a drink or two, Gerry’s has become a family restaurant, too.</p>
+                <br>
+                <p>From opening its first store in Tomas Morato, Quezon City, Gerry’s has come a long way. With its continuous expansion nationwide, Gerry’s has also opened branches in the United States, Singapore and Qatar.</p>
+                <br>
+                <p>Up until now, we strive to continue to evolve, responding to the ever growing needs of our customers. We believe in offering our customers the best value for their money. We also take pride in taking care of our people – one of our most valuable assets.</p>
+                <br>
+                <p>These are the reasons why Gerry's remains to be the favorite among Filipinos. For as long as we can, we guarantee nothing but great food and loads of fun.</p>
+            </div>
+            <!-- RIGHT CONTAINER -->
+            <div class="right-container">
+                <img src="/assets/resto.jpg" alt="Resto Picture">
+            </div>
+         </section>
+
+         <!-- OUR MENU SECTION -->
+         <section class="menu-section" id="menu">
+            <h1>OUR MENU</h1>
+            <div class="menu-grid">
+                <!-- APPETIZER -->
+                <div class="menu-item">
+                    <h2>Appetizer</h2>
+                    <p>CALAMARES..............................................P375.00</p>
+                    <p>CRISPY KANGKONG.............................P155.00</p>
+                    <p>SISIG KALAW............................................P375.00</p>
+                </div>
+
+                <!-- SOUPS -->
+                <div class="menu-item">
+                    <h2>Soups</h2>
+                    <p>NILAGANG BULALO..........................P375.00</p>
+                    <p>SINIGANG NA BABOY.......................P155.00</p>
+                    <p>SINIGANG NA HIPON.......................P375.00</p>
+                </div>
+
+                <!-- SEAFOOD -->
+                <div class="menu-item">
+                    <h2>Seafood</h2>
+                    <p>BANGUS ALA POBRE........................P375.00</p>
+                    <p>INIHAW NA BABY PUSIT..................P155.00</p>
+                    <p>TINOLANG PAMPANO......................P375.00</p>
+                </div>
+
+                <!-- RICE -->
+                <div class="menu-item">
+                    <h2>Rice</h2>
+                    <p>CRAB RICE................................................P375.00</p>
+                    <p>GARLIC RICE............................................P155.00</p>
+                    <p>PLAIN RICE..............................................P375.00</p>
+                </div>
+
+                <!-- DESSERTS -->
+                <div class="menu-item">
+                    <h2>Desserts</h2>
+                    <p>BANANA SPLIT......................................P375.00</p>
+                    <p>LECHE FLAN............................................P155.00</p>
+                    <p>MAIS CON HIELO.................................P375.00</p>
+                </div>
+
+                <!-- DRINKS -->
+                <div class="menu-item">
+                    <h2>Drinks</h2>
+                    <p>BANANA SHAKE...................................P375.00</p>
+                    <p>FOUR SEASONS....................................P155.00</p>
+                    <p>ORANGE JUICE.....................................P375.00</p>
+                </div>
+            </div>
+         </section>
+
+         <!-- RESERVATION FORM SECTION -->
+         <section class="reserve-section" id="reserve">
+            <form class="form-body">
+                <h1>RESERVE HERE</h1>
+                <!-- full name input field-->
+                <div class="form-grp">
+                    <label for="name">Full Name (LN, FN, MI)</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <!-- contact number input field-->
+                <div class="form-grp">
+                    <label for="name">Contact Number</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <!-- date and time input fields-->
+                <div class="date-time">
+                    <div class="date">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="time">
+                        <label for="time">Time</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                </div>
+
+                <!-- branch and pax input fields-->
+                <div class="branch-pax">
+                    <!-- select -->
+                    <div class="branch">
+                        <label for="branch">Branch</label>
+                        <select id="branch" name="branch" required>
+                            <option value="" disabled selected>Select a branch</option>
+                            <option value="branch1">Quezon City</option>
+                            <option value="branch2">Marikina City</option>
+                            <option value="branch3">Pasig City</option>
+                            <option value="branch4">Mandaluyong City</option>
+                            <option value="branch5">Manila City</option>
+                        </select>
+                    </div>
+                    <!-- number input -->
+                    <div class="no-pax">
+                        <label for="no-pax">No. of Pax</label>
+                        <input type="number" id="no-pax" name="no-pax" min="1" required>
+                    </div>
+                </div>
+
+                <!-- confirm button -->
+                <div class="button-container">
+                    <button type="submit">SUBMIT</button>
+                </div>
+
+            </form>
+         </section>
+
+        <!-- FOOTER -->
+         <footer>
+            <div class="left-footer">
+                <img src="/assets/gerry-logo.png" alt="Gerry's Grill Logo">
+                <p>Gerry's Restaurant and Bar © 2024 - PH</p>
+            </div>
+            <div class="right-footer">
+                <p>FOLLOW US ON</p>
+                <div class="socials">
+                    <a href="https://www.facebook.com/SMHS1957OFFICIAL" target="_blank" aria-label="Facebook">
+                        <i class="uil uil-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/gerrysrestaurant/?hl=en" target="_blank" aria-label="Instagram">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                </div>
+                <a href="https://www.gerrysgrill.com/PH" class="visit-link" target="_blank">Visit the Official Page of Gerry’s Grill</a>
+            </div>
+         </footer>
+
+         <!-- connect to js -->
+         <script src="script.js"></script>
+    </body>
+</html>
